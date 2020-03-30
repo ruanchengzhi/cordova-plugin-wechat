@@ -17,7 +17,8 @@ enum  CDVWechatSharingType {
     CDVWXSharingTypeImage,
     CDVWXSharingTypeMusic,
     CDVWXSharingTypeVideo,
-    CDVWXSharingTypeWebPage
+    CDVWXSharingTypeWebPage,
+    CDVWXSharingTypeMini
 };
 
 @interface CDVWechat:CDVPlugin <WXApiDelegate>
@@ -32,5 +33,7 @@ enum  CDVWechatSharingType {
 - (void)jumpToBizProfile:(CDVInvokedUrlCommand *)command;
 - (void)jumpToWechat:(CDVInvokedUrlCommand *)command;
 - (void)chooseInvoiceFromWX: (CDVInvokedUrlCommand *)command;
-
+- (void)openMiniProgram: (CDVInvokedUrlCommand *)command;
+- (BOOL)handleUserActivity:(NSUserActivity *)userActivity;
+- (BOOL)handleWechatOpenURL:(NSURL *)url;
 @end

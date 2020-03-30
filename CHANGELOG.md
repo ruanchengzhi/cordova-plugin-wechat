@@ -1,5 +1,40 @@
 # Change Log
 
+## 3.0.0 - 2020-02-20
+### Added
+- IOS Opensdk 1.8.6.2
+- Support *Universal Links*
+### Fixed
+- Remove IOS Deprecated Method
+
+## 2.9.0 - 2019-08-23
+### Fixed
+- remove appid param from ios wechat payment
+
+## 2.8.0 - 2019-04-26
+### Added
+- cordova 9.0 support
+- cordova 7.0 support renew
+- add share image permission request on android
+- add share file path support
+
+## 2.7.0 - 2019-03-02
+### Added
+- add share to wechat mini program
+- add App opens WeChat mini program
+### Fixed
+- removed libstd c++ from xcode10
+- fix android cordova version 7.0.0 install bug
+- fix ios payment appid param
+
+## 2.6.0 - 2019-01-05
+### Fixed
+- Fixed cordova android 7.0 install script bug
+
+## 2.5.0 - 2018-12-26
+### Fixed
+- Android preferences code problem
+
 ## 2.4.0 - 2018-07-27
 ### Added
 - Android compress thumb 
